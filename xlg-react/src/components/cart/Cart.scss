@@ -1,0 +1,28 @@
+.cart {
+    width: 100vm;
+    .cart-header {
+        width: 100vm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px ;
+        height: 50px ;
+        background-color: var(--themeColor);
+
+      i.icon.icon-return {
+  
+      }
+  
+      .title {
+        font-size: 16px ;
+        color: white;
+        font-weight: 600;
+      }
+  
+      .text {
+        font-weight: 600;
+        font-size: 16px ;
+        color: white;
+      }
+    }
+  }

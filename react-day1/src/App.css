@@ -1,0 +1,10 @@
+.navs {
+  display: flex;
+}
+.navs .itme {
+  margin: 10px 10px;
+  background-color: red;
+}
+.redCls {
+  color: red;
+}

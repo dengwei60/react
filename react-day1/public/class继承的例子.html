@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    
+</body>
+<script>
+    /* 多行文本注释的快捷键是alt+shift+a */
+    /* 用es6的构造函数的方法来传递继承的关系
+     */
+    // 首先创建一个父类
+    class Componet{
+
+    }
+    //再通过es6的语法来继承属性
+    class App extends Componet{
+        /* 首先添加属性 */
+        state = {
+            num:1,
+            status:"login"
+        }
+        // 再用es6语法来构造方法
+        render(){
+            return `<div>123</div>` 
+        //这里使用的是模板字符串的方法
+        }
+    }
+    let app = new App()
+    document.getElementById("app").innerHTML = app.render()
+</script>
+</html>
