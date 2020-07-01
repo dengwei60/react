@@ -25,4 +25,160 @@
         color: white;
       }
     }
+    .cart-list {
+        .cart-item {
+            box-shadow: 1px 2px 2px 1px #ddd;
+            .item-shop {
+                padding: 10px;
+                width: 100%;
+                height: 46px ;
+              display: flex;
+              align-items: center;
+            i.icon.icon-radio {
+      
+            }
+      
+            img {
+                width: 30px ;
+                height: 30px ;
+                margin: 0 5px ;
+      
+            }
+      
+            .item-text {
+      
+            }
+          }
+          .item-content {
+              padding: 10px ;
+              margin-top: 5px ;
+              border-bottom: 1px solid #ddd;/* no */
+              border-top: 1px solid #ddd;/* no */
+              display: flex;
+            .left {
+                display: flex;
+                align-items: center;
+
+              img {
+                  height: 96px ;
+                  width: 96px ;
+                  margin-right: 10px ;
+              }
+            }
+          
+              .des {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                .des-title {
+                    line-height       : 28px;
+                    overflow          : hidden;
+                    color             : #1a1a1a;
+                    font-size         : 20px;
+                    overflow-wrap     : break-word;
+                    text-overflow     : ellipsis;
+                    display           : -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+          
+                .des-color {
+                    color             : #737373;
+                    font-size         : 13px;
+                    line-height       : 20px;
+                    overflow          : hidden;
+                    text-overflow     : ellipsis;
+                    display           : -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+          
+                }
+          
+                .bottom {
+                    width: 240px;
+                    // background-color: red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  .bottom-price {
+                    color             : var(--themeColor);
+                    font-size         : 17.5px;
+                    line-height       : 28px;
+                    overflow          : hidden;
+                    text-overflow     : ellipsis;
+                    display           : -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    text-size-adjust  : 100%;
+                  }
+          
+                  .bottom-right {
+                      display: flex;
+                      align-items: center;
+                    i.icon.icon-sub {
+                        
+                    }
+          
+                    span.content-right-num {
+                        color             : #1a1a1a;
+                        font-size         : 20px;
+                        margin            : 0 5px;
+                        height            : 20px;
+                        line-height       : 20px;
+                        overflow          : hidden;
+                        text-overflow     : ellipsis;
+                        display           : -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+          
+                    i.icon.icon-add {
+          
+                    }
+                  }
+                }
+              }
+            
+          }
+
+        }
+      }
+    .cart-footer {
+        width: 100vw;
+        padding: 10px ;
+        position: absolute;
+        left: 0 ;
+        bottom: 66px ;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        .footer-left {
+            height: 56px ;
+            display: flex;
+            align-items: center;
+           
+          .footer-left-text {
+            color    : #ee394a;
+            font-size: 17.5px;
+          }
+        }
+      
+        .footer-right {
+            height: 56px ;
+            display: flex;
+            align-items: center;
+          .footer-right-pay {
+            font-size       : 15px;
+            border-radius   : 5px;
+            display         : inline-block;
+            color           : white;
+            width           : 61px;
+            border-color    : #ee394a;
+            height          : 40px;
+            line-height          : 40px;
+            text-align: center;
+            background-color: var(--themeColor);
+          }
+        }
+      }
   }

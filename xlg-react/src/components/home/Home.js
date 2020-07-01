@@ -19,7 +19,7 @@ import Axios from 'axios'
 export default class Home extends Component {
     constructor(props){
         super(props);
-        const CancelToken=Axios.CancelToken;
+        const CancelToken = Axios.CancelToken;
         this.source = CancelToken.source();
     }
     state = {
@@ -30,13 +30,15 @@ export default class Home extends Component {
     }
     componentWillUnmount(){
         // 组件销毁时
-        console.log("卸载home组件")
+        // console.log("卸载home组件")
         this.swiper = null;
-        this.source.cancel("Operation canceled by the user.")
+        this.source.cancel('Operation canceled by the user.');
     }
     componentDidMount(){
         //加载的时候促销商品被请求到
-        axios.get("getHotProducts")
+        axios.get("getHotProducts",{
+            cancelToken: this.source.token
+        })
         .then(res => {
             // console.log(res)促销商品
             this.setState({
@@ -47,14 +49,16 @@ export default class Home extends Component {
             console.error(err); 
         })
         //页面加载的时候发送请求拿到轮播图的数据
-        axios.get("getIndexLoopimg")
+        axios.get("getIndexLoopimg",{
+            cancelToken: this.source.token
+        })
         .then(res => {
             // console.log(res)
             this.setState({
                 swiper_list:res.wdata
             },()=>{
                 //配置使用的时候需要用到的操作数据的方法
-                new Swiper('.swiper-container', {
+                this.swiper = new Swiper('.swiper-container', {
                     // direction: 'vertical', // 垂直切换选项
                     loop: true, // 循环模式选项
 

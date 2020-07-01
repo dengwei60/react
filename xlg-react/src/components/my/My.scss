@@ -1,0 +1,163 @@
+.my {
+    .my-top {
+        width: 100vw;
+        height: 220px;
+        position: relative;
+        .info{
+            img.top-user-bg {
+                height: 100%;
+                width: 100%;
+            }
+        
+            .user-box {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                width: 90px;
+                height: 90px ;
+                border-radius: 50%;
+                border: 1px solid white;
+              img.top-user {
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%,-50%);
+                  width: 80px;
+                  height: 80px ;
+                  border-radius: 50%;
+              }
+            }
+        }
+        .uninfo{
+            position: relative;
+            img.top-user-bg {
+                height: 100%;
+                width: 100%;
+            }
+            .logininfo{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                border: 1px solid white;
+                width:100px;
+                border-radius: 5px;
+                font-size:18px;
+                color:white;
+                height:40px;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+      
+    }
+    .my-list {
+        width: 100vm;
+        height: 45px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px ;
+        border-bottom: 1px solid #ddd;
+        .my-list-left {
+            display: flex;
+            align-items: center;
+          img {
+              margin-right: 5px ;
+              width: 30px ;
+              height: 30px ;
+          }
+      
+          span.my-list-left-text {
+            display    : inline-block;
+            margin-left: 10px;
+            font-size  : 16px;
+            color      : #333333;
+          }
+        }
+      
+        .my-list-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          span.my-list-right-text {
+              font-size: 14px;
+              color: #999;
+          }
+      
+          i.icon.icon-select {
+            
+          }
+        }
+      }
+      .my-fun {
+          height: 74px;
+          width: 100vw;
+          padding: 0 10px ;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid #dddddd;
+        //   border-top: 1px solid #dddddd;
+        .my-fun-item {
+            flex: 1;
+            // background-color: #999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          i.icon.icon-pay {
+      
+          }
+      
+          .my-fun-item-text {
+              margin-top: 3px ;
+            font-size: 15px;
+            color    : #737373;
+          }
+        }
+      }
+      .my-bottom {
+          width: 100vw;
+          margin-top: 10px ;
+          border-top: 1px solid #ddd;
+          .my-bottom-item {
+              height: 45px ;
+              padding:0 10px ;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+          .my-bottom-item-left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            img {
+                height: 30px ;
+                width: 30px ;
+            }
+      
+            .my-bottom-item-left-text {
+                margin-left:10px;
+                color:#333333;
+                font-size:16px;
+            }
+          }
+      
+          .my-bottom-item-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .my-bottom-item-right-text {
+                font-size:13px;
+                color:#999999;
+      
+            }
+      
+            i.icon.icon-select {
+      
+            }
+          }
+        }
+      }
+  }

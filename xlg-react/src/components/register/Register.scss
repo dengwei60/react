@@ -1,0 +1,31 @@
+.login {
+    width: 100vw;
+    padding: 100px 50px 0 50px;
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+        padding: 10px ;
+        height: 40px;
+        margin-bottom: 10px ;
+    }
+  
+    .login-btn {
+        box-shadow: 1px 1px 2px 2px rgb(188, 188, 188);
+        margin-top: 30px ;
+        width: 100%;
+        background-color: var(--themeColor);
+        height: 50px ;
+        line-height: 50px ;
+        text-align: center;
+        border-radius: 25px ;
+        color: white;
+    }
+  
+    h5 {
+        text-align: center;
+        font-size:16px;
+        color:#999999;
+        font-weight:normal;
+    }
+  }
