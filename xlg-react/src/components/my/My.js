@@ -29,13 +29,13 @@ import { withRouter } from "react-router-dom"
                 {
                     this.state.isLogin ?
                     <div className="info"> 
-                        <img src={user_bg} className="top-user-bg"/>
+                        <img src={user_bg} className="top-user-bg" alt=""/>
                             <div className="user-box">
-                                <img src={user} className="top-user"/>
+                                <img src={user} className="top-user" alt=""/>
                             </div>  
                     </div> :
                     <div className="uninfo"> 
-                        <img src={user_bg} className="top-user-bg"/>
+                        <img src={user_bg} className="top-user-bg" alt=""/>
                         <div className="logininfo" onClick={this.handellogin}>
                             登录
                         </div>
