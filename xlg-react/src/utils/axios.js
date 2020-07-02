@@ -9,6 +9,11 @@ const instance = axios.create({
 })
 //配置请求拦截
 instance.interceptors.request.use(config => {
+    let userInfo = JSON.parse(localStorage.getItem("userInfo")) || {}
+    let oauth_token = userInfo.oauth_token 
+    if(oauth_token && config.data){
+        config.data.oauth_token = oauth_token
+    }
 // Do something before request is sent
 return config;
 },error => {

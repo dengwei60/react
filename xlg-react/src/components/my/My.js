@@ -16,6 +16,14 @@ import { withRouter } from "react-router-dom"
     state = {
         isLogin:false //判断的登录状态
     }
+    componentDidMount(){
+        let userInfo = JSON.parse(localStorage.getItem("userInfo")) || {}
+        let isLogin = userInfo.oauth_token ? true : false
+        this.setState({
+            isLogin:isLogin,
+        })
+
+    }
     handellogin=(params) => {
         this.props.history.push("/login")
     }
