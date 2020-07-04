@@ -5,6 +5,7 @@ import "./Home.scss"
 import Swiper from "swiper"
 import "swiper/css/swiper.css"
 import axios from '../../utils/axios'
+
 //引入图片
 import Nav01 from "../../images/nav01.png"
 import Nav02 from "../../images/nav02.png"
@@ -16,6 +17,7 @@ import customer02 from "../../images/customer02.jpg"
 import customer03 from "../../images/customer03.jpg"
 import customer04 from "../../images/customer04.jpg"
 import Axios from 'axios'
+//引入路由高级组件
 export default class Home extends Component {
     constructor(props){
         super(props);
