@@ -18,6 +18,7 @@ import customer03 from "../../images/customer03.jpg"
 import customer04 from "../../images/customer04.jpg"
 import Axios from 'axios'
 //引入路由高级组件
+
 export default class Home extends Component {
     constructor(props){
         super(props);
@@ -78,6 +79,7 @@ export default class Home extends Component {
 
     }
     render() {
+        //整体结构
         return (
             <div className="home">
                 {/* 顶部导航开始 */}
