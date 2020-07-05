@@ -18,8 +18,9 @@ import customer03 from "../../images/customer03.jpg"
 import customer04 from "../../images/customer04.jpg"
 import Axios from 'axios'
 //引入路由高级组件
+import { withRouter } from "react-router-dom"
 
-export default class Home extends Component {
+ class Home extends Component {
     constructor(props){
         super(props);
         const CancelToken = Axios.CancelToken;
@@ -82,6 +83,7 @@ export default class Home extends Component {
         //整体结构
         return (
             <div className="home">
+                
                 {/* 顶部导航开始 */}
                 <div className="header">
                     <i className="icon icon-menu"></i>
@@ -162,7 +164,11 @@ export default class Home extends Component {
                     {
                         this.state.goodslist.map((e,i)=>{
                             return (
-                                <div className="goodslist-item" key={i}>
+                                <div className="goodslist-item" key={i} onClick={(params) => {
+                                    //跳转到产品详情业
+                                    this.props.history.push("/product/"+e.pid);
+                                }
+                                }>
                                     <img src={e.product_url} alt=""/>
                                     <h1>{e.product_name}</h1>
                                     <div className="price">
@@ -180,3 +186,4 @@ export default class Home extends Component {
         )
     }
 }
+export default withRouter(Home)

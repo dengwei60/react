@@ -11,6 +11,10 @@ import TabBar from './components/tabbar/TabBar';
 import Category from './components/category/Category';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
+import Product from './components/product/Product';
+import Pay from './components/pay/Pay';
+import Payment from './components/pay/Payment';
+import Address from './components/address/Address';
 
 function App() {
   /* 这里要使每个里面都有tabbar就在组件的时候配合插槽使用*/
@@ -26,6 +30,10 @@ function App() {
         <Route exact path="/category" render={()=><Category></Category>}></Route>
         <Route exact path="/login" render={()=><Login></Login>}></Route>
         <Route exact path="/register" render={()=><Register></Register>}></Route>
+        <Route exact path="/product/:id" render={()=><Product></Product>}></Route>
+        <Route exact path="/pay" render={()=><Pay></Pay>}></Route>
+        <Route exact path="/payment" render={()=><Payment></Payment>}></Route>
+        <Route exact path="/address" render={()=><Address></Address>}></Route>
         <Redirect to="/"></Redirect>
         </Switch>
       </Router>
